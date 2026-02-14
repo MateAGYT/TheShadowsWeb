@@ -44,14 +44,29 @@
         <p style="font-size: 0.8em;">Programada con HTML y CSS por MateAG</p>
     </footer>
 
-    <script>
-      const replacements = {
-        '{currenturl}': window.location.href,
-        '{currenttitle}': document.title
-      };
-      document.body.innerHTML = document.body.innerHTML.replace(/{currenturl}|{currenttitle}/g, 
-        matched => replacements[matched]);
-    </script>
+<script>
+  const replacements = {
+    '{currenturl}': window.location.href,
+    '{currenttitle}': document.title
+  };
+
+  function replaceInText(element) {
+    for (let node of element.childNodes) {
+      if (node.nodeType === 3) {
+        let text = node.nodeValue;
+        let replacedText = text.replace(/{currenturl}|{currenttitle}/g, matched => replacements[matched]);
+        
+        if (replacedText !== text) {
+          node.nodeValue = replacedText;
+        }
+      } else if (node.nodeType === 1) {
+        replaceInText(node);
+      }
+    }
+  }
+
+  replaceInText(document.body);
+</script>
 
     </body>
 </html>
