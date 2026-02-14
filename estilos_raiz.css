@@ -1,0 +1,22 @@
+h1 {
+    font-family: Arial;
+    text-align: center;
+    color: #ff0000;
+}
+
+h3 {
+    font-family: sans-serif;
+    text-align: center;
+    color: #6831e6 ;
+}
+
+.centrar-img {
+    display: grid;
+    place-items: center;
+    height: 200px; 
+}
+
+img {
+    height: 200px;
+    width: 200px;
+}

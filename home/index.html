@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<!--
+ _____ _          ____  _               _                   
+|_   _| |__   ___/ ___|| |__   __ _  __| | _____      _____ 
+  | | | '_ \ / _ \___ \| '_ \ / _` |/ _` |/ _ \ \ /\ / / __|
+  | | | | | |  __/___) | | | | (_| | (_| | (_) \ V  V /\__ \
+  |_| |_| |_|\___|____/|_| |_|\__,_|\__,_|\___/ \_/\_/ |___/
+
+                © Copyright 2026 - TheShadows
+                Todos los derechos reservados.
+            Toda copia de esta web será denunciada.
+
+            Programado mediante CSS y HTML por MateAG.
+              Imágenes: Google Lens y Google Gemini.
+                    Diseño original: Oryzon
+                    Rediseño por: Same-App
+-->
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheShadows Network - Inicio</title>
+    
+    <!-- Google -->
+    <meta name="title" content="TheShadows Network" />
+    <meta name="description" content="Bienvenidos al mejor servidor de Minecraft. Contamos con muchas modalidades como Survival 1.21, Parkour y otras en desarrollo. ¡Únete hoy! IP, Tienda, Discord y más." />
+
+    <!-- Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://web.theshadowsmc.xyz/" />
+    <meta property="og:title" content="TheShadows Network" />
+    <meta property="og:description" content="Bienvenidos al mejor servidor de Minecraft. Contamos con muchas modalidades como Survival 1.21, Parkour y otras en desarrollo. ¡Únete hoy! IP, Tienda, Discord y más." />
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://web.theshadowsmc.xyz/" />
+    <meta property="twitter:title" content="TheShadows Network" />
+    <meta property="twitter:description" content="Bienvenidos al mejor servidor de Minecraft. Contamos con muchas modalidades como Survival 1.21, Parkour y otras en desarrollo. ¡Únete hoy! IP, Tienda, Discord y más." />
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./assets/img/favicon.png">
+    
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <div class="page-container">
+        <main class="main-content">
+            
+            <div class="logo-container fade-in-up" style="animation-delay: 0ms;">
+                <img 
+                    src="./assets/img/logo.png" 
+                    alt="The Shadows MC" 
+                    class="logo-image"
+                    width="224"
+                    height="224"
+                >
+            </div>
+
+            <p class="tagline fade-in-up" style="animation-delay: 200ms;">
+                JUEGA CON NOSOTROS EN <span class="highlight">THESHADOWSMC.XYZ</span>
+            </p>
+
+            <div class="cards-grid">
+                
+                <a href="https://dsc.gg/theshadowsnet" target="_blank" rel="noopener noreferrer" class="card-link">
+                    <div class="card fade-in-up" style="animation-delay: 400ms;">
+                        <div class="card-icon">
+                            <img 
+                                src="./assets/img/discord-icon.png" 
+                                alt="Discord Icon"
+                                width="64"
+                                height="64"
+                            >
+                        </div>
+                        <h3 class="card-title">Discord</h3>
+                        <p class="card-description">Soporte, amigos y más</p>
+                    </div>
+                </a>
+
+                <a href="https://theshadowsmc.tebex.io/" target="_blank" rel="noopener noreferrer" class="card-link">
+                    <div class="card card-featured fade-in-up" style="animation-delay: 600ms;">
+                        <div class="featured-badge">Destacado</div>
+                        <div class="card-icon card-icon-large">
+                            <img 
+                                src="./assets/img/store-icon.png" 
+                                alt="Tienda Icon"
+                                width="40"
+                                height="40"
+                            >
+                        </div>
+                        <h3 class="card-title card-title-large">Tienda</h3>
+                        <p class="card-description">Beneficios, rangos globales, etc.</p>
+                    </div>
+                </a>
+
+                <div class="card fade-in-up" style="animation-delay: 800ms;">
+                    <div class="card-icon">
+                        <img 
+                            src="./assets/img/game-icon.png" 
+                            alt="Jugar Icon"
+                            width="32"
+                            height="32"
+                        >
+                    </div>
+                    <h3 class="card-title">Jugar</h3>
+                    <p class="card-description">Copia la IP y... ¡diviértete!</p>
+                    
+                    <div class="ip-buttons">
+                        <button class="ip-button" onclick="copyToClipboard('theshadowsmc.xyz', this)">
+                            <span class="ip-label">Java:</span>
+                            <span class="ip-address">theshadowsmc.xyz</span>
+                            <img 
+                                src="./assets/img/portapapeles.png" 
+                                alt="Copy"
+                                width="16"
+                                height="16"
+                                class="copy-icon"
+                            >
+                        </button>
+                        
+                        <button class="ip-button" onclick="copyToClipboard('theshadowsmc.xyz', this)">
+                        <span class="ip-label">Java:</span>
+                        <span class="ip-address">theshadowsmc.xyz</span>
+                        <img 
+                           id="copy-icon"
+                           src="./assets/img/portapapeles.png" 
+                           alt="Copy"
+                           width="32"
+                           height="32"
+                           class="copy-icon"
+                    > 
+</button>
+                </div>
+
+            </div>
+        </main>
+
+        <footer class="footer fade-in" style="animation-delay: 1000ms;">
+            <p>Programado por <a href="https://mateag.netlify.app" target="_blank">MateAG</a></p>
+        </footer>
+    </div>
+
+<script>
+    function copyToClipboard(text, button) {
+
+        const imgOriginal = "./assets/img/portapapeles.png";
+        const imgCopiado = "./assets/img/tick.png";
+
+        navigator.clipboard.writeText(text).then(function() {
+            const addressSpan = button.querySelector('.ip-address');
+            const iconImg = button.querySelector('.copy-icon');
+            const originalText = addressSpan.textContent;
+
+            addressSpan.textContent = '¡Copiado!';
+            iconImg.src = imgCopiado;
+            button.classList.add('copied');
+            
+            setTimeout(function() {
+                addressSpan.textContent = originalText;
+                iconImg.src = imgOriginal;
+                button.classList.remove('copied');
+            }, 3000);
+
+        }).catch(function(err) {
+            console.error('Error al copiar: ', err);
+        });
+    }
+</script>
+</body>
+</html>
