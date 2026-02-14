@@ -1,3 +1,42 @@
+/* --- FONDO ANIMADO DEL PRIMER SITIO --- */
+:root {
+    --bg-dark: #0a0a0a;
+    --bg-dark-red: #1a0505;
+    --bg-red: #2d0a0a;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-size: .9em;
+    font-family: 'Segoe UI', Verdana, sans-serif;
+    /* Fondo radial igual al original */
+    background: radial-gradient(ellipse at center, var(--bg-red) 0%, var(--bg-dark-red) 40%, var(--bg-dark) 100%) !important;
+    margin: 0;
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Capa de luces animadas */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: 
+        radial-gradient(ellipse at 20% 30%, rgba(220, 38, 38, 0.15) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 70%, rgba(139, 0, 0, 0.1) 0%, transparent 50%);
+    background-size: 200% 200%;
+    animation: bg-pulse 8s ease-in-out infinite;
+    pointer-events: none;
+    z-index: -1;
+}
+
+@keyframes bg-pulse {
+    0%, 100% { background-position: 0% 0%; opacity: 1; }
+    50% { background-position: 100% 100%; opacity: 0.7; }
+}
+
 h1 {
     font-family: Arial;
     text-align: center;
