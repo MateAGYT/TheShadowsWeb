@@ -121,6 +121,10 @@ body {
     font-weight: 700;
 }
 
+.highlight {
+    text-shadow: 0 0 6px #8f0d0d;
+}
+
 @media (min-width: 768px) {
     .tagline {
         font-size: 1.25rem;
