@@ -1,0 +1,115 @@
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            font-size: .9em;
+            font-family: 'Segoe UI', Verdana, sans-serif;
+            background: #EEEEEE;
+        }
+        #main-wrapper {
+            flex: 1;
+        }
+
+        #header {
+            width: 96%;
+            padding: 10px 2%;
+            background: linear-gradient(#000000d1, transparent);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        #header h1 {
+            font-size: 2em;
+            margin: 0;
+            color: #FFF;
+        }
+        #header img {
+            height: 45px;
+            width: auto;
+        }
+
+        #content {
+            margin: 20px auto;
+            width: 90%;
+            max-width: 800px;
+        }
+        .content-container {
+            background: #FFF;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        fieldset { border: none; padding: 0; text-align: center;} 
+        h2 { font-size: 1.8em; margin: 0; color: #0b13f6; font-weight: bold; text-align: center;} 
+        h3 { font-size: 1.1em; margin: 15px 0; color: #333; text-align: center;} 
+
+        .btn-inicio {
+            display: inline-block;
+            background-color: #e812dd;
+            color: white !important;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1em;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 0px #a62dad; 
+            margin-top: 10px;
+        }
+
+        .btn-inicio:hover {
+            background-color: #e812dd;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 0px #a62dad;
+        }
+
+        .btn-inicio:active {
+            transform: translateY(2px);
+            box-shadow: 0 0px 0px #a62dad;
+        }
+
+        .btn-incio {
+            font-family: Arial;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+            padding: 2px 0;
+            color: #cdcdcd;
+        }
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animacion-entrada {
+    animation: slideDown 0.8s ease-out forwards;
+}
+
+body {
+    background: linear-gradient(#fe0000, #610909);
+}
+
+text {
+    text-shadow: 0 0 6px #74e970;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
