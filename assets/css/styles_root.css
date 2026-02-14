@@ -1,0 +1,119 @@
+h1 {
+    font-family: Orbitron;
+    text-align: center;
+    color: #f90202;
+    text-shadow: 0 0 6px #850707;
+}
+
+h3 {
+    font-family: sans-serif;
+    text-align: center;
+    color: #ffffff ;
+}
+
+.centrar-img {
+    display: grid;
+    place-items: center;
+    height: 200px; 
+}
+
+img {
+    margin-bottom: 20px;
+    height: 200px;
+    width: 210px;
+}
+
+body {
+    background: linear-gradient(#ff0202, #7b3737);
+    background-repeat: no-repeat;
+    background-color: #7b3737;
+}
+
+        #header {
+            width: 96%;
+            padding: 10px 2%;
+            background: linear-gradient(#000000d1, transparent);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        #header h1 {
+            font-size: 2em;
+            margin: 0;
+            color: #FFF;
+        }
+        #header img {
+            height: 45px;
+            width: auto;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            font-size: .9em;
+            font-family: 'Segoe UI', Verdana, sans-serif;
+        }
+        #main-wrapper {
+            flex: 1;
+        }
+
+:root {
+    --bg-dark: #0a0a0a;
+    --bg-dark-red: #1a0505;
+    --bg-red: #2d0a0a;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-size: .9em;
+    font-family: 'Segoe UI', Verdana, sans-serif;
+    background: radial-gradient(ellipse at center, var(--bg-red) 0%, var(--bg-dark-red) 40%, var(--bg-dark) 100%) !important;
+    margin: 0;
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: 
+        radial-gradient(ellipse at 20% 30%, rgba(220, 38, 38, 0.15) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 70%, rgba(139, 0, 0, 0.1) 0%, transparent 50%);
+    background-size: 200% 200%;
+    animation: bg-pulse 8s ease-in-out infinite;
+    pointer-events: none;
+    z-index: -1;
+}
+
+@keyframes bg-pulse {
+    0%, 100% { background-position: 0% 0%; opacity: 1; }
+    50% { background-position: 100% 100%; opacity: 0.7; }
+}
+
+
+:root {
+    --bg-dark: #0a0a0a;
+    --bg-dark-red: #1a0505;
+    --bg-red: #2d0a0a;
+    --shadow-red: 0 0 30px rgba(220, 38, 38, 0.5);
+}
+
+.centrar-img img {
+    margin-bottom: 20px;
+    height: 200px;
+    width: auto; 
+    filter: drop-shadow(var(--shadow-red)); 
+}
+
+#header img {
+    height: 45px;
+    width: auto;
+    filter: none; 
+}
