@@ -1,0 +1,61 @@
+h1 {
+    font-family: Arial;
+    text-align: center;
+    color: #ffffff;
+}
+
+h3 {
+    font-family: sans-serif;
+    text-align: center;
+    color: #00ff3c ;
+}
+
+.centrar-img {
+    display: grid;
+    place-items: center;
+    height: 200px; 
+}
+
+img {
+    margin-bottom: 20px;
+    height: 200px;
+    width: 210px;
+}
+
+body {
+    background: linear-gradient(#ff0202, #7b3737);
+    background-repeat: no-repeat;
+    background-color: #7b3737;
+}
+
+        #header {
+            width: 96%;
+            padding: 10px 2%;
+            background: linear-gradient(#000000d1, transparent);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        #header h1 {
+            font-size: 2em;
+            margin: 0;
+            color: #FFF;
+        }
+        #header img {
+            height: 45px;
+            width: auto;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            font-size: .9em;
+            font-family: 'Segoe UI', Verdana, sans-serif;
+        }
+        #main-wrapper {
+            flex: 1;
+        }
