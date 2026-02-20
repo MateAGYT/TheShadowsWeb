@@ -5,6 +5,6 @@
 Todos los derechos reservados.
 ```
 
-No se permite la distribución o uso del código fuente de la [página web](https://web.theshadowsmc.xyz).
+No se permite la distribución o uso del código fuente de la [página web](https://web.theshadowsmc.xyz). Cualquier copia de esta web será denunciada legalmente.
 
 Discord: https://discord.com/users/893129394418229339
